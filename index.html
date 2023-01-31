@@ -354,7 +354,14 @@ My curiosity to develop this website started by receiving several ads regarding 
       channelId: 'ac2a13e5-f6cf-4d47-8e5b-46032740ea18',
       botButtonIcon: 'test_uwu.webp',	
       logIcon: 'test_uwu.webp',
-      botIcon: 'test_uwu.webp'	  
+      botIcon: 'test_uwu.webp',
+    i18n: {
+	    en: {
+		    chatTitle: 'LOfavørBot'
+	    }
+    },
+      enableAttachment: true,
+    initUserHiddenMessage: 'hei',
 	  
   };    
   function initSdk(name) {
@@ -367,9 +374,7 @@ My curiosity to develop this website started by receiving several ads regarding 
           Bots.connect()                               // Connect to server
               .then(() => {
                   console.log("Connection Successful");
-       
-                      }
-                  });
+                  
               })
               .catch((reason) => {
                   console.log("Connection failed");
